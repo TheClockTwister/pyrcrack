@@ -3,7 +3,7 @@
 **Python aircrack-ng bindings**
 
 PyrCrack is a Python API exposing a common aircrack-ng API. As AircrackNg will
-run in background processes, and produce parseable output both in files and
+run in background processes, and produce parsable output both in files and
 stdout, the most pythonical approach are context managers, cleaning up after 
 
 |pypi| |release| |downloads| |python_versions| |pypi_versions| |coverage| |actions|
@@ -28,15 +28,14 @@ This library is available on `Pypi <https://pypi.org/project/pyrcrack/>`_, you c
 Usage
 -----
 
-This library exports a basic aircrack-ng API aiming to keep always a small
-readable codebase.
+This library exports a basic aircrack-ng API aiming to always keep a small readable codebase.
 
 This has led to a simple library that executes each of the aircrack-ng's suite commands
-and auto-detects its usage instructions. Based on that, it dinamically builds
-classes inheriting that usage as docstring and a run() method that accepts
+and auto-detects its usage instructions. Based on that, it dynamically builds
+classes inheriting that usage as docstring and a `run()` method that accepts
 keyword parameters and arguments, and checks them BEFORE trying to run them.
 
-Some classes expose themselves as async iterators, as airodump-ng's wich
+Some classes expose themselves as async iterators, as `airodump-ng` which
 returns access points with its associated clients.
 
 Examples
@@ -44,7 +43,7 @@ Examples
 
 Be sure to check the python `notebook example <./docs/examples/example.ipynb>`_.
 
-You can have also have a look at the examples/ folder for some usage examples,
+You can also have a look at the `examples/` folder for some usage examples,
 such as the basic "scan for targets", that will list available interfaces, let
 you choose one, put it in monitor mode, and scan for targets updating results
 each 2 seconds.
